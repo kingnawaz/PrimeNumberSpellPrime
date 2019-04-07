@@ -16,7 +16,7 @@ public class SubSetSum{
         int[] sub_sum=new int[N];
         Arrays.fill(sub_sum,0);
         //call subset sum function from zero'th index
-        subset(arr,sub_sum,0,N,S);
+        subSet(arr,sub_sum,0,N,S);
         in.close();
     }
     public static  void subset(int[] arr,int[] sub_sum,int i,int N,int S){
@@ -33,8 +33,8 @@ public class SubSetSum{
             int sum=S-arr[i];
             sub_sum1[i]=1;
             sub_sum2[i]=0;
-            subset(arr,sub_sum1,i+1,N,sum);
-            subset(arr,sub_sum2,i+1,N,S);
+            subSet(arr,sub_sum1,i+1,N,sum);
+            subSet(arr,sub_sum2,i+1,N,S);
         }
 
     }
