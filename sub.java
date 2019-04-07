@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
-public class sub{
-    public static void main(String... s){
+public class SubSetSum{
+    public static void main(String... args){
         Scanner in=new Scanner(System.in);
         //input the number of elements in array
         int N=in.nextInt();
