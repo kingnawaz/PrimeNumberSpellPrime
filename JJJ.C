@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<conio.h>
 int is_prime(int);
-main(){
+int main(){
 	int n1,n2,ones,tens,hundreds,thousands,itr,N=0,count=0;
 	printf("enter value of n1,n2");
 	scanf("%d%d",&n1,&n2);
-	if(n1<0||n1>19999)
+	if(n1<1||n1>19999)
 	printf("invalid num");	
 	for(itr=n1;itr<=n2;itr++){
 		if(is_prime(itr)){
@@ -281,6 +281,7 @@ main(){
 	}
 }
 printf("Number of elements -> %d",N);
+return 0;
 }
 int is_prime(int val){
 	int i,flag=0;
